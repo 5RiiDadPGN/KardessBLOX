@@ -1,5 +1,5 @@
--- MADE BY RIP#6666
--- send issues or suggestions to my discord: discord.gg/rips
+-- 	ORIGINAL VER BY RIP#6666
+-- best fps booster for krnl out there!
 
 if not _G.Ignore then
     _G.Ignore = {} -- Add Instances to this table to ignore them (e.g. _G.Ignore = {workspace.Map, workspace.Map2})
@@ -194,8 +194,8 @@ local function CheckIfBad(Instance)
 end
 if _G.SendNotifications then
     StarterGui:SetCore("SendNotification", {
-        Title = "discord.gg/rips",
-        Text = "Loading FPS Booster...",
+        Title = "discord.gg/krnl-working",
+        Text = "Loading the FPS Booster",
         Duration = math.huge,
         Button1 = "Okay"
     })
@@ -215,8 +215,8 @@ coroutine.wrap(pcall)(function()
             sethiddenproperty(workspace:FindFirstChildOfClass("Terrain"), "Decoration", false)
         else
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "Your exploit does not support sethiddenproperty, please use a different exploit.",
+                Title = "discord.gg/krnl-working",
+                Text = "sethiddenproperty error",
                 Duration = 5,
                 Button1 = "Okay"
             })
@@ -224,14 +224,14 @@ coroutine.wrap(pcall)(function()
         end
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "Low Water Graphics Enabled",
+                Title = "discord.gg/krnl-working",
+                Text = "Low water graphics enabled.",
                 Duration = 5,
                 Button1 = "Okay"
             })
         end
         if _G.ConsoleLogs then
-            warn("Low Water Graphics Enabled")
+            warn("Low water graphics enabled.")
         end
     end
 end)
@@ -244,8 +244,8 @@ coroutine.wrap(pcall)(function()
             sethiddenproperty(Lighting, "Technology", 2)
         else
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "Your exploit does not support sethiddenproperty, please use a different exploit.",
+                Title = "discord.gg/krnl-working",
+                Text = "sethiddenproperty error",
                 Duration = 5,
                 Button1 = "Okay"
             })
@@ -253,14 +253,14 @@ coroutine.wrap(pcall)(function()
         end
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "No Shadows Enabled",
+                Title = "discord.gg/krnl-working",
+                Text = "No shadows enabled.",
                 Duration = 5,
                 Button1 = "Okay"
             })
         end
         if _G.ConsoleLogs then
-            warn("No Shadows Enabled")
+            warn("No shadows enabled.")
         end
     end
 end)
@@ -270,14 +270,14 @@ coroutine.wrap(pcall)(function()
         settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "Low Rendering Enabled",
+                Title = "discord.gg/krnl-working",
+                Text = "Low rendering enabled.",
                 Duration = 5,
                 Button1 = "Okay"
             })
         end
         if _G.ConsoleLogs then
-            warn("Low Rendering Enabled")
+            warn("Low rendering enabled.")
         end
     end
 end)
@@ -289,14 +289,14 @@ coroutine.wrap(pcall)(function()
         MaterialService.Use2022Materials = false
         if _G.SendNotifications then
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "Reset Materials Enabled",
+                Title = "discord.gg/krnl-working",
+                Text = "Reset materials enabled",
                 Duration = 5,
                 Button1 = "Okay"
             })
         end
         if _G.ConsoleLogs then
-            warn("Reset Materials Enabled")
+            warn("Reset materials enabled")
         end
     end
 end)
@@ -307,37 +307,37 @@ coroutine.wrap(pcall)(function()
                 setfpscap(tonumber(_G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"])))
                 if _G.SendNotifications then
                     StarterGui:SetCore("SendNotification", {
-                        Title = "discord.gg/rips",
-                        Text = "FPS Capped to " .. tostring(_G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"])),
+                        Title = "discord.gg/krnl-working",
+                        Text = "FPS has been capped to: " .. tostring(_G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"])),
                         Duration = 5,
                         Button1 = "Okay"
                     })
                 end
                 if _G.ConsoleLogs then
-                    warn("FPS Capped to " .. tostring(_G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"])))
+                    warn("FPS has been capped to: " .. tostring(_G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"])))
                 end
             elseif _G.Settings["FPS Cap"] or (_G.Settings.Other and _G.Settings.Other["FPS Cap"]) == true then
                 setfpscap(1e6)
                 if _G.SendNotifications then
                     StarterGui:SetCore("SendNotification", {
-                        Title = "discord.gg/rips",
-                        Text = "FPS Uncapped",
+                        Title = "discord.gg/krnl-working",
+                        Text = "FPS has been uncapped",
                         Duration = 5,
                         Button1 = "Okay"
                     })
                 end
                 if _G.ConsoleLogs then
-                    warn("FPS Uncapped")
+                    warn("FPS has been uncapped")
                 end
             end
         else
             StarterGui:SetCore("SendNotification", {
-                Title = "discord.gg/rips",
-                Text = "FPS Cap Failed",
+                Title = "discord.gg/krnl-working",
+                Text = "FPS capping failed! Make sure you didn't do a typo on the settings.",
                 Duration = math.huge,
                 Button1 = "Okay"
             })
-            warn("FPS Cap Failed")
+            warn("FPS Cap Failed!!!")
         end
     end
 end)
@@ -350,14 +350,14 @@ local StartNumber = _G.WaitPerAmount or 500
 local WaitNumber = _G.WaitPerAmount or 500
 if _G.SendNotifications then
     StarterGui:SetCore("SendNotification", {
-        Title = "discord.gg/rips",
-        Text = "Checking " .. #Descendants .. " Instances...",
+        Title = "discord.gg/krnl-working",
+        Text = "FPS Booster is checking " .. #Descendants .. " instances...",
         Duration = 15,
         Button1 = "Okay"
     })
 end
 if _G.ConsoleLogs then
-    warn("Checking " .. #Descendants .. " Instances...")
+    warn("Checking " .. #Descendants .. " instances...")
 end
 for i, v in pairs(Descendants) do
     CheckIfBad(v)
@@ -370,12 +370,12 @@ for i, v in pairs(Descendants) do
     end
 end
 StarterGui:SetCore("SendNotification", {
-    Title = "discord.gg/rips",
-    Text = "FPS Booster Loaded!",
+    Title = "discord.gg/krnl-working",
+    Text = "FPS Booster loaded successfully, enjoy your game.",
     Duration = math.huge,
-    Button1 = "Okay"
+    Button1 = "Nice!"
 })
-warn("FPS Booster Loaded!")
+warn("FPS Booster Loaded! You may close the console")
 --game.DescendantAdded:Connect(CheckIfBad)
 --[[game.DescendantAdded:Connect(function(value)
     CheckIfBad(value)
