@@ -1,5 +1,5 @@
 > [!WARNING]
-> Sunlight is discontinued, a special project soon.
+> Quitting for studies til' summer, peace.
 
 ## Hi there 👋
 
